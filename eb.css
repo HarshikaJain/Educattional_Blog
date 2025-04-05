@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: midnightblue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-right button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav.categories {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav.categories ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav.categories ul li {
+    margin: 0 15px;
+}
+
+nav.categories ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .categories a:hover {
+    background-color:cornsilk;
+    color:beige;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.article-content h2 {
+    font-size: 1.5em;
+}
+
+.article-summary {
+    font-size: 1em;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.author-bio {
+    background-color: #333b37;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.author-bio h3 {
+    margin: 0;
+}
+
+.comments-section {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.comment-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+.comment {
+    margin-top: 15px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+#darkModeToggle {
+    background-color: #f0f0f0;
+    font-size: 20px;
+    color: black;
+}
+
+#darkModeToggle:hover,
+.header-right button:hover {
+    background-color: lightgray;
+}
+
+.dark-mode .article,
+.dark-mode .comments-section,
+.dark-mode .author-bio,
+.dark-mode header,
+.dark-mode nav.categories {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode nav.categories ul li a {
+    color: #ccc;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+}
+  
+.modal-content h2 {
+    margin-top: 0;
+}
+  
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+  
+.close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}  
